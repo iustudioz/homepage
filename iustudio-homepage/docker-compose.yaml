@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  nextjs:
+    image: hugowuang701/iustudio-homepage:4
+    container_name: iustudio_homepage
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - /app/node_modules
